@@ -3,7 +3,7 @@
     <nav class="navbar navbar-dark bg-dark">
       <a href="#" class="navbar-brand">Turbo To-Do</a>
     </nav>
-    <TodoView></TodoView>
+    <router-view></router-view>
     
     
     
@@ -16,12 +16,19 @@ import HelloWorld from './components/HelloWorld.vue'
 import Login from './components/login.vue'
 import TodoView from './components/TodoView.vue'
 
+
 export default {
   name: 'app',
   components: {
     HelloWorld,
     Login,
     TodoView
+  },
+
+  data() {
+    return {
+
+    }
   }
 }
 </script>

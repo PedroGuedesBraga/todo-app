@@ -20,8 +20,14 @@
                 <label for="passwordInput">Senha</label>
                 <input type="password" class="form-control" id="passwordInput">
             </div>
-            <button class="btn btn-primary">Logar</button>
+            <router-link to="/todo-view">
+            </router-link>
+                <a class="btn btn-info" href="http://localhost:5000/auth/google">
+                   Logar
+                </a>
+                
         </form>
+
 
         </div>
         <div class="col-4 text-center">
@@ -31,8 +37,14 @@
 </template>
 
 <script>
+
+
+import axios from 'axios'
 export default {
     name: 'Login'
+
+
+ 
 }
 </script>
 
